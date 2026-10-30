@@ -1,0 +1,14 @@
+interface:
+  display_name: Spécifier un projet
+  short_description: Questions, audit contradictoire et spécifications PDF
+  default_prompt: Utilise $specifier-projet pour recueillir mon besoin, affiner mes
+    spécifications, les auditer sous plusieurs angles et produire un dossier PDF structuré.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
