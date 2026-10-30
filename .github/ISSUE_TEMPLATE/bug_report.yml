@@ -1,0 +1,33 @@
+name: Signaler un problème
+description: Décrire un comportement inattendu du skill ou un problème de documentation.
+title: "[Problème] "
+body:
+  - type: markdown
+    attributes:
+      value: Utilisez un exemple fictif ou anonymisé. Ne partagez aucun secret ni dossier client.
+  - type: input
+    id: environment
+    attributes:
+      label: Environnement et révision
+      description: Client, modèle si connu, révision du skill et capacités disponibles.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Comment reproduire le problème ?
+      description: Demande initiale et réponses minimales nécessaires pour observer le problème.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Résultat observé
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Résultat attendu
+    validations:
+      required: true

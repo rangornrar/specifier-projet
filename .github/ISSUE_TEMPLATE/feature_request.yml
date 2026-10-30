@@ -1,0 +1,27 @@
+name: Proposer une amélioration
+description: Relier une proposition à un besoin concret.
+title: "[Amélioration] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Quel problème voulez-vous résoudre ?
+      description: Décrivez un cas concret, avec des données fictives ou anonymisées.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Comportement souhaité
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives et compromis
+  - type: textarea
+    id: verification
+    attributes:
+      label: Comment constater que l'amélioration fonctionne ?
+    validations:
+      required: true
